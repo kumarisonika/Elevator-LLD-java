@@ -5,7 +5,7 @@ public class Request {
     Integer destinationFloor;
     private Direction direction;
 
-    public  Request(int sourceFloor, Direction direction){
+    public Request(int sourceFloor, Direction direction){
         this.sourceFloor= sourceFloor;
         this.direction= direction;
         destinationFloor=null;
@@ -21,5 +21,5 @@ public class Request {
 
     public Direction getDirection(){ return direction;}
 
-    public int getDestinationFloor(){ return destinationFloor;}
+    public Integer getDestinationFloor(){ return destinationFloor;}
 }
