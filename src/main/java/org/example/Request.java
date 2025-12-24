@@ -11,10 +11,10 @@ public class Request {
         destinationFloor=null;
     }
 
-    public Request(int sourceFloor, int destinationFloor){
-        this.sourceFloor= sourceFloor;
+    public Request(int destinationFloor){
         this.destinationFloor= destinationFloor;
         this.direction=null;
+        this.sourceFloor=-1;
     }
 
     public int getSourceFloor(){ return sourceFloor;}

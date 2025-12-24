@@ -11,7 +11,11 @@ public class ElevatorController {
 
     public void submitRequest(Request request){
         requestQueue.addRequest(request);
-        System.out.println("Request submitted from floor " + request.getDestinationFloor());
+        if(request.getSourceFloor()!=-1) {
+            System.out.println("Request submitted for pickup from floor " + request.getSourceFloor());
+        }else{
+            System.out.println("Request submitted for frop from floor " + request.getDestinationFloor());
+        }
     }
 
     public void processNextRequest(){
