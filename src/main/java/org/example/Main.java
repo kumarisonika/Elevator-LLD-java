@@ -4,22 +4,20 @@ package org.example;
 public class Main {
     static void main() {
 
-//        Elevator elevator = new Elevator(0);
-        //create a controller with elevator
-        //crate a request and add to controller
-        //then process the request from controller
+        Elevator elevator = new Elevator(0);
 
-//        ElevatorController elevatorController = new ElevatorController(elevator);
-//
-//        elevatorController.submitRequest(new Request(3, Direction.UP));
-//        elevatorController.submitRequest(new Request(11, Direction.DOWN));
-//        elevatorController.submitRequest(new Request(9));
-//        elevatorController.submitRequest(new Request(2));
-//
-//        elevatorController.processNextRequest();
-//        elevatorController.processNextRequest();
-//        elevatorController.processNextRequest();
-//        elevatorController.processNextRequest();
+
+        ElevatorController elevatorController = new ElevatorController(elevator);
+
+        elevatorController.submitRequest(new Request(3, Direction.UP));
+        elevatorController.submitRequest(new Request(11, Direction.DOWN));
+        elevatorController.submitRequest(new Request(9));
+        elevatorController.submitRequest(new Request(2));
+
+        elevatorController.processNextRequest();
+        elevatorController.processNextRequest();
+        elevatorController.processNextRequest();
+        elevatorController.processNextRequest();
 
 
     }
